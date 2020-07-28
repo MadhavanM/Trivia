@@ -14,6 +14,11 @@
 		C100FA4F24CEDBFA00EA4ABE /* Trivia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C100FA4D24CEDBFA00EA4ABE /* Trivia.xcdatamodeld */; };
 		C100FA5124CEDC0300EA4ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C100FA5024CEDC0300EA4ABE /* Assets.xcassets */; };
 		C100FA5424CEDC0300EA4ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C100FA5224CEDC0300EA4ABE /* LaunchScreen.storyboard */; };
+		C100FA5D24CF1A6500EA4ABE /* Ques1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100FA5C24CF1A6500EA4ABE /* Ques1ViewController.swift */; };
+		C100FA5F24CF1CDA00EA4ABE /* Ques2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100FA5E24CF1CDA00EA4ABE /* Ques2ViewController.swift */; };
+		C100FA6124CF1CF200EA4ABE /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100FA6024CF1CF200EA4ABE /* SummaryViewController.swift */; };
+		C100FA6424CF465600EA4ABE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100FA6324CF465600EA4ABE /* HistoryTableViewCell.swift */; };
+		C100FA6624CF471B00EA4ABE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100FA6524CF471B00EA4ABE /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		C100FA5024CEDC0300EA4ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C100FA5324CEDC0300EA4ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C100FA5524CEDC0300EA4ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C100FA5C24CF1A6500EA4ABE /* Ques1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ques1ViewController.swift; sourceTree = "<group>"; };
+		C100FA5E24CF1CDA00EA4ABE /* Ques2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ques2ViewController.swift; sourceTree = "<group>"; };
+		C100FA6024CF1CF200EA4ABE /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		C100FA6324CF465600EA4ABE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		C100FA6524CF471B00EA4ABE /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +70,51 @@
 			children = (
 				C100FA4424CEDBFA00EA4ABE /* AppDelegate.swift */,
 				C100FA4624CEDBFA00EA4ABE /* SceneDelegate.swift */,
-				C100FA4824CEDBFA00EA4ABE /* ViewController.swift */,
+				C100FA6724D0044300EA4ABE /* Model */,
+				C100FA6224CF462500EA4ABE /* TableViewCells */,
+				C100FA5B24CF19E700EA4ABE /* Controller */,
+				C100FA6824D005D500EA4ABE /* Assets */,
 				C100FA4A24CEDBFA00EA4ABE /* Main.storyboard */,
-				C100FA5024CEDC0300EA4ABE /* Assets.xcassets */,
 				C100FA5224CEDC0300EA4ABE /* LaunchScreen.storyboard */,
 				C100FA5524CEDC0300EA4ABE /* Info.plist */,
 				C100FA4D24CEDBFA00EA4ABE /* Trivia.xcdatamodeld */,
 			);
 			path = Trivia;
+			sourceTree = "<group>";
+		};
+		C100FA5B24CF19E700EA4ABE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C100FA4824CEDBFA00EA4ABE /* ViewController.swift */,
+				C100FA5C24CF1A6500EA4ABE /* Ques1ViewController.swift */,
+				C100FA5E24CF1CDA00EA4ABE /* Ques2ViewController.swift */,
+				C100FA6024CF1CF200EA4ABE /* SummaryViewController.swift */,
+				C100FA6524CF471B00EA4ABE /* HistoryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C100FA6224CF462500EA4ABE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C100FA6324CF465600EA4ABE /* HistoryTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		C100FA6724D0044300EA4ABE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C100FA6824D005D500EA4ABE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C100FA5024CEDC0300EA4ABE /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +190,13 @@
 			files = (
 				C100FA4924CEDBFA00EA4ABE /* ViewController.swift in Sources */,
 				C100FA4524CEDBFA00EA4ABE /* AppDelegate.swift in Sources */,
+				C100FA6424CF465600EA4ABE /* HistoryTableViewCell.swift in Sources */,
+				C100FA5D24CF1A6500EA4ABE /* Ques1ViewController.swift in Sources */,
 				C100FA4F24CEDBFA00EA4ABE /* Trivia.xcdatamodeld in Sources */,
 				C100FA4724CEDBFA00EA4ABE /* SceneDelegate.swift in Sources */,
+				C100FA6624CF471B00EA4ABE /* HistoryViewController.swift in Sources */,
+				C100FA6124CF1CF200EA4ABE /* SummaryViewController.swift in Sources */,
+				C100FA5F24CF1CDA00EA4ABE /* Ques2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
